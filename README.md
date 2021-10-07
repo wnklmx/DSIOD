@@ -14,7 +14,14 @@ Please check the respective folders to get more information on the scenarios. Yo
 ## Citation
 For more information, please look at our publication:
 ```
-will be added
+@misc{winkelmann2021probabilistic,
+      title={Probabilistic Metamodels for an Efficient Characterization of Complex Driving Scenarios}, 
+      author={Max Winkelmann and Mike Kohlhoff and Hadj Hamma Tadjine and Steffen Müller},
+      year={2021},
+      eprint={2110.02892},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
 ```
 
 ## Extension of the Dataset
