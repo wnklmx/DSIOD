@@ -14,13 +14,13 @@ Please check the respective folders to get more information on the scenarios. Yo
 ## Citation
 For more information, please look at our publication:
 ```
-@misc{winkelmann2021probabilistic,
-      title={Probabilistic Metamodels for an Efficient Characterization of Complex Driving Scenarios}, 
-      author={Max Winkelmann and Mike Kohlhoff and Hadj Hamma Tadjine and Steffen Müller},
-      year={2021},
-      eprint={2110.02892},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@article{winkelmann_probabilistic_2021,
+	title = {Probabilistic {Metamodels} for an {Efficient} {Characterization} of {Complex} {Driving} {Scenarios}},
+	url = {http://arxiv.org/abs/2110.02892},
+	journal = {arXiv:2110.02892 [cs, eess]},
+	author = {Winkelmann, Max and Kohlhoff, Mike and Tadjine, Hadj Hamma and Müller, Steffen},
+	month = oct,
+	year = {2021},
 }
 ```
 
