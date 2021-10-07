@@ -6,7 +6,7 @@ Please check the respective folders to get more information on the scenarios. Yo
 |Title|Number of Inputs|Functional Description|
 |-|-|-|
 |[Cut-In](data/202109_Cut-In/)|2|An automated vehicle (ego) is driving in the middle lane of a straight road with three lanes. Another vehicle drives ahead in the right lane and immidiately cuts into the ego's lane.|
-|[Emergency Breaking](data/202109_Emergency_Braking/)|5|An automated vehicle follows another vehicle (co) on a straight road. Suddenly, the co carries out an emergency braking maneuver.|
+|[Emergency Braking](data/202109_Emergency_Braking/)|5|An automated vehicle follows another vehicle (co) on a straight road. Suddenly, the co carries out an emergency braking maneuver.|
 |[Following](data/202109_Following/)|13|An automated vehicle follows another vehicle, which initially accelerates, holds its velocity and then brakes.|
 |[Lane-Keeping](data/202109_Lane-Keeping/)|15|An automated vehicle has to follow a curved road, where different obstacles can hide the lane markings.|
 |[Parking](data/202109_Parking/)|20|An automated vehicle drives across a parking lot. Two other vehicles occlude a third vehicle that suddenly leaves its parking lot.|

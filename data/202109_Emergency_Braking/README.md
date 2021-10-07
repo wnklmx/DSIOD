@@ -1,4 +1,4 @@
-# Emergency Breaking
+# Emergency Braking
 
 ## Functional Scenario
 An automated vehicle follows another vehicle (co) on a straight road. Suddenly, the co carries out an emergency braking maneuver.
