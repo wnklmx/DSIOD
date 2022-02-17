@@ -1,0 +1,81 @@
+title: "Jaywalking"
+
+introduction: "This scenario is part of an upcoming paper. A reference to the paper will be added here as soon as it is published."
+
+functional_scenario: "An automated vehicle (AV) drives in a suburban area. Suddenly, an initially occluded child crosses the road in front of the AV."
+
+logical_scenario: "The AV starts from standstill and accelerates to v_av. As soon as the AV arrives at a triggering point (at this point, it has reached its target velocity), a child is spawned at a longitudinal distance of d_0. The child is initially occluded by a vending machine and immediately starts moving towards the road with a velocity of v_ped. The environmental conditions are varied in terms of rain, fog, wind, and the time of day. The scenario implementation is based on the Scenario 3 of the [CARLA Scenario Runner](https://github.com/carla-simulator/scenario_runner). The initial lateral distance between the center of the AV and the child is 4 m as in the [Euro-NCAP scenario Car-to-Pedestrian Nearside Child](https://cdn.euroncap.com/media/26997/euro-ncap-aeb-vru-test-protocol-v20.pdf). The agent used to control the AV is [Pylot](https://github.com/erdos-project/pylot)."
+
+concrete_scenarios: "The monte_carlo dataset contains concrete scenarios that are parameterized based on various studies regarding weather conditions, pedestrians' velocities in different weather conditions, and pedestrians' traffic gap acceptance. This is explained in detail in the paper. The quasi_random dataset contains concrete scenarios which are evenly distributed within an orthotope enclosing the monte_carlo scenarios; the paramterizations are generated using the Sobol sequence."
+
+inputs:
+    v_av:
+        type: "continuous"
+        unit: "m/s"
+        latex: "$v_\\mathrm{av}$"
+        latex_unit: "\\si{\\meter\\per\\second}"
+        min: 4.5
+        max: 7.5
+        explanation: "target velocity of the AV"
+    v_ped:
+        type: "continuous"
+        unit: "m/s"
+        latex: "$v\\mathrm{ped}$"
+        latex_unit: "\\si{\\meter\\per\\second}"
+        min: 0.4
+        max: 2.0
+        explanation: "velocity of the child"
+    d_0:
+        type: "continuous"
+        unit: "m"
+        latex: "$d_0$"
+        latex_unit: "\\si{\\meter}"
+        min: 0
+        max: 50
+        explanation: "longitudinal distance, at which the child is spawned (with reference to the front of the AV)"
+    rain_rel:
+        type: "continuous"
+        unit: ""
+        latex: "$\\mathrm{rain_{rel}}$"
+        latex_unit: ""
+        min: 0
+        max: 1
+        explanation: "normalized rain intensity, also influences tire-road friction"
+    fog_rel:
+        type: "continuous"
+        unit: ""
+        latex: "$\\mathrm{fog_{rel}}$"
+        latex_unit: ""
+        min: 0
+        max: 1
+        explanation: "normalized fog intensity"
+    wind_rel:
+        type: "continuous"
+        unit: ""
+        latex: "$\\mathrm{wind_{rel}}$"
+        latex_unit: ""
+        min: 0
+        max: 1
+        explanation: "normalized wind intensity"
+    time_of_day:
+        type: "continuous"
+        unit: "h"
+        latex: "$t_\\mathrm{day}$"
+        latex_unit: "\\si{\\hour}"
+        min: 0
+        max: 24
+        explanation: "time of day"
+
+outputs:
+    min_dist*:
+        type: "continuous"
+        unit: "m"
+        latex: "$d_\\mathrm{min}^*$"
+        latex_unit: "\\si{\\meter}"
+        explanation: "the minimal distance between the AV and child (the AV is approximated by a rectangle and the child is approximated by a circle). In case of a collision, the (negated) remaining braking distance of the AV is used, assuming that the AV decelerates as much as possible given the tire-road friction. Hence, all values below 0 indicate a collision"
+    carla_collision:
+        type: "binary"
+        unit: ""
+        latex: "collision"
+        latex_unit: ""
+        explanation: "collision indicator based on CARLA's collision detection. Since CARLA's collision detector uses polygon models, there is a small number of cases where this collision indicator does not match the sign of the min_dist* KPI"

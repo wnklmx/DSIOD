@@ -10,6 +10,7 @@ Please check the respective folders to get more information on the scenarios. Yo
 |[Following](data/202109_Following/)|13|An automated vehicle follows another vehicle, which initially accelerates, holds its velocity and then brakes.|
 |[Lane-Keeping](data/202109_Lane-Keeping/)|15|An automated vehicle has to follow a curved road, where different obstacles can hide the lane markings.|
 |[Parking](data/202109_Parking/)|20|An automated vehicle drives across a parking lot. Two other vehicles occlude a third vehicle that suddenly leaves its parking lot.|
+|[Jaywalking](data/202202_Jaywalking/)|7|An automated vehicle (AV) drives in a suburban area. Suddenly, an initially occluded child crosses the road in front of the AV.|
 
 ## Citation
 For more information, please look at our publication:
