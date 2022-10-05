@@ -15,13 +15,13 @@ Please check the respective folders to get more information on the scenarios. Yo
 ## Citation
 For more information, please look at our publication:
 ```
-@article{winkelmann_probabilistic_2021,
-	title = {Probabilistic {Metamodels} for an {Efficient} {Characterization} of {Complex} {Driving} {Scenarios}},
-	url = {http://arxiv.org/abs/2110.02892},
-	journal = {arXiv:2110.02892 [cs, eess]},
-	author = {Winkelmann, Max and Kohlhoff, Mike and Tadjine, Hadj Hamma and Müller, Steffen},
-	month = oct,
-	year = {2021},
+@article{winkelmann_probabilistic_2022,
+  title = {Probabilistic {{Metamodels}} for an {{Efficient Characterization}} of {{Complex Driving Scenarios}}},
+  author = {Winkelmann, Max and Kohlhoff, Mike and Tadjine, Hadj Hamma and MÃ¼ller, Steffen},
+  date = {2022-09-26},
+  journaltitle = {IEEE Transactions on Intelligent Transportation Systems},
+  issn = {1558-0016},
+  doi = {10.1109/TITS.2022.3206882},
 }
 ```
 
