@@ -1,5 +1,15 @@
 # Jaywalking
-This scenario is part of an upcoming paper. A reference to the paper will be added here as soon as it is published.
+For more information, please look at the following publication:
+```
+@inproceedings{winkelmann_transfer_2022,
+  title = {Transfer {{Importance Sampling}} - {{How Testing Automated Vehicles}} in {{Multiple Test Setups Helps With}} the {{Bias-Variance Tradeoff}}},
+  booktitle = {2022 {{IEEE}} 25th {{International Conference}} on {{Intelligent Transportation Systems}} ({{ITSC}})},
+  author = {Winkelmann, Max and Vasconi, Constantin and Müller, Steffen},
+  date = {2022-10-08},
+  pages = {26--31},
+  doi = {10.1109/ITSC55140.2022.9922091}
+}
+```
 ## Functional Scenario
 An automated vehicle (AV) drives in a suburban area. Suddenly, an initially occluded child crosses the road in front of the AV.
 ## Logical Scenario
