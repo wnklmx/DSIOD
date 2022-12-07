@@ -13,7 +13,7 @@ Please check the respective folders to get more information on the scenarios. Yo
 |[Jaywalking](data/202202_Jaywalking/)|7|An automated vehicle (AV) drives in a suburban area. Suddenly, an initially occluded child crosses the road in front of the AV.|
 
 ## Citation
-For more information, please look at our publication:
+For more information, please look at our [publication](https://ieeexplore.ieee.org/document/9903286):
 ```
 @article{winkelmann_probabilistic_2022,
   title = {Probabilistic {{Metamodels}} for an {{Efficient Characterization}} of {{Complex Driving Scenarios}}},
