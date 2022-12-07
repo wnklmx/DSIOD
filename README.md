@@ -17,11 +17,15 @@ For more information, please look at our publication:
 ```
 @article{winkelmann_probabilistic_2022,
   title = {Probabilistic {{Metamodels}} for an {{Efficient Characterization}} of {{Complex Driving Scenarios}}},
-  author = {Winkelmann, Max and Kohlhoff, Mike and Tadjine, Hadj Hamma and Müller, Steffen},
-  date = {2022-09-26},
-  journaltitle = {IEEE Transactions on Intelligent Transportation Systems},
+  author = {Winkelmann, Max and Kohlhoff, Mike and Tadjine, Hadj Hamma and M{\"u}ller, Steffen},
+  year = {2022},
+  month = dec,
+  journal = {IEEE Transactions on Intelligent Transportation Systems},
+  volume = {23},
+  number = {12},
+  pages = {23896--23905},
   issn = {1558-0016},
-  doi = {10.1109/TITS.2022.3206882},
+  doi = {10.1109/TITS.2022.3206882}
 }
 ```
 
